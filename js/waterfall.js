@@ -15,11 +15,35 @@
   var demoContent = [
     {
       demo_link: 'https://github.com/lichangke',
-      img_link: 'https://upload.jianshu.io/users/upload_avatars/16846478/d550a357-8017-483a-8d52-933487d467c1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp',
+      img_link: 'https://github.com/lichangke/lichangke.github.io/blob/master/img/GitHub.jpg?raw=true',
       code_link: 'https://github.com/lichangke',
       title: 'GitHub Home',
       core_tech: 'GitHub',
-      description: '我GitHub<a href ="https://github.com/lichangke?tab=repositories/">这里</a>。'
+      description: '我的GitHub<a href ="https://github.com/lichangke?tab=repositories/">这里</a>。'
+    },
+	{
+      demo_link: 'https://www.zhihu.com/people/lichangke/',
+      img_link: 'https://github.com/lichangke/lichangke.github.io/blob/master/img/zhihu.jpg?raw=true',
+      code_link: 'https://www.zhihu.com/people/lichangke/',
+      title: '知乎 Home',
+      core_tech: '知乎',
+      description: '我的知乎<a href ="https://www.zhihu.com/people/lichangke/">这里</a>。'
+    },
+	{
+      demo_link: 'https://www.jianshu.com/u/3e95c7555dc7',
+      img_link: 'https://github.com/lichangke/lichangke.github.io/blob/master/img/jianshu.jpg?raw=true',
+      code_link: 'https://www.jianshu.com/u/3e95c7555dc7',
+      title: '简书 Home',
+      core_tech: '简书',
+      description: '我的简书<a href ="https://www.jianshu.com/u/3e95c7555dc7">这里</a>。'
+    },
+	{
+      demo_link: 'https://medium.com/',
+      img_link: 'https://github.com/lichangke/lichangke.github.io/blob/master/img/medium.jpg?raw=true',
+      code_link: 'https://medium.com/',
+      title: 'Medium',
+      core_tech: 'Read',
+      description: 'a place to read, write, and interact with the stories that matter most to you'
     }
   ];
   contentInit(demoContent) //内容初始化
@@ -49,7 +73,7 @@ function contentInit(content) {
   // var htmlStr = htmlArr.join('')
   var htmlStr = ''
   for (var i = 0; i < content.length; i++) {
-    htmlStr += '<div class="grid-item">' + '   <a class="a-img" href="' + content[i].demo_link + '">' + '       <img src="' + content[i].img_link + '">' + '   </a>' + '   <h3 class="demo-title">' + '       <a href="' + content[i].demo_link + '">' + content[i].title + '</a>' + '   </h3>' + '   <p>主要技术：' + content[i].core_tech + '</p>' + '   <p>' + content[i].description + '     ' + '   </p>' + '</div>'
+    htmlStr += '<div class="grid-item">' + '   <a class="a-img" href="' + content[i].demo_link + '">' + '       <img src="' + content[i].img_link + '">' + '   </a>' + '   <h3 class="demo-title">' + '       <a href="' + content[i].demo_link + '">' + content[i].title + '</a>' + '   </h3>' + '   <p>主要技术：' + content[i].core_tech + '</p>' + '   <p>' + content[i].description + '</p>' + '</div>'
   }
   var grid = document.querySelector('.grid')
   grid.insertAdjacentHTML('afterbegin', htmlStr)

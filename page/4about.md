@@ -28,8 +28,9 @@ type: page
 ## 联系我
 
 * GitHub：[LiChangke](https://github.com/lichangke)
-* email：986740304@qq.com/
+* email：986740304@qq.com
 * [知乎](https://www.zhihu.com/people/lichangke/)
+*[简书](https://www.zhihu.com/people/lichangke/)
 
 <!--* [Facebook]()-->
 <!--* [Twitter]()-->
