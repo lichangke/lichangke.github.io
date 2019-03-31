@@ -2,7 +2,7 @@
 layout: post
 title:   Python编程从入门到实践—项目1 外星人入侵
 author: leacoder
-categories: 程序员练级之旅 
+categories: 程序员练级之旅 Share
 tags: 程序员练级之旅 Python
 ---
 
