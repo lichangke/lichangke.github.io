@@ -47,7 +47,7 @@ tags: Algorithm Leetcode
 ### 1、堆栈 + 字典
 
 [有效的括号(Valid Parentheses) Py3 堆栈 + 字典实现 ](https://github.com/lichangke/LeetCode/blob/master/20.%20Valid%20Parentheses/ValidParentheses.py)
-```
+```Python
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []

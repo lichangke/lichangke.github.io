@@ -29,7 +29,7 @@ tags:
 
 [反转链表(Reverse Linked List)C++迭代实现](https://github.com/CK-Li/LeetCode/blob/master/206.%20Reverse%20Linked%20List/ReverseLinkedList.cpp)
 
-```
+```C++
 /**
  * @author:leacoder
  * @des: 迭代实现 反转链表
@@ -54,7 +54,7 @@ public:
 ### 2、递归实现 C++
 [反转链表(Reverse Linked List)C++递归实现](https://github.com/CK-Li/LeetCode/blob/master/206.%20Reverse%20Linked%20List/ReverseLinkedList_2.cpp)
 
-```
+```C++
 /**
  * @author:leacoder
  * @des: 递归实现 反转链表
@@ -97,7 +97,7 @@ Java实现逻辑上与C++无区别
 ## Python3 实现
 
 [反转链表(Reverse Linked List) Py3 迭代实现](https://github.com/CK-Li/LeetCode/blob/master/206.%20Reverse%20Linked%20List/ReverseLinkedList_2.py)
-```
+```Python
 # @author:leacoder
 # @des: 迭代实现 反转链表
 

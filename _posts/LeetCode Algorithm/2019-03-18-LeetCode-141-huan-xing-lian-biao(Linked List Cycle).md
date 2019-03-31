@@ -49,7 +49,7 @@ tags:
 ## Python3 实现
 ### 1、存储记录 实现 Py3
 [环形链表(Linked List Cycle) Py3 存储记录 实现](https://github.com/CK-Li/LeetCode/blob/master/141.%20Linked%20List%20Cycle/LinkedListCycle.py)
-```
+```Python
 # @author:leacoder
 # @des:  存储记录 环形链表
 class Solution(object):
@@ -70,7 +70,7 @@ class Solution(object):
 ```
 ### 2、快慢指针 实现 Py3
 [环形链表(Linked List Cycle) Py3 快慢指针 实现](https://github.com/CK-Li/LeetCode/blob/master/141.%20Linked%20List%20Cycle/LinkedListCycle_2.py)
-```
+```Python
 # @author:leacoder
 # @des:  快慢指针 环形链表
 
