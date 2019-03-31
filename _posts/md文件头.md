@@ -28,6 +28,8 @@ tags: 程序员练级之旅 Python
 
 
 
+
+
 ---
 layout: post
 title:   Python编程从入门到实践—项目1 外星人入侵
@@ -69,3 +71,11 @@ categories:   Tips
 tags:
     Tips Python
 ---
+
+``` python
+
+代码块高亮  '''```+空格+语言（必须小写）'''
+
+```
+
+行与行之间需要有间隔行，不然两行会解析到一起去
