@@ -9,7 +9,7 @@ tags: Algorithm Leetcode
 * content
 {:toc}
 
-
+![LeetCode.jpg](https://upload-images.jianshu.io/upload_images/16846478-ad7c94b0d15a5cfb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 有效的括号
 
 [有效的括号（Valid Parentheses）](https://leetcode-cn.com/problems/valid-parentheses/)
@@ -76,3 +76,14 @@ class Solution:
 [有效的括号(Valid Parentheses) C++堆栈 + map实现 ](https://github.com/lichangke/LeetCode/blob/master/20.%20Valid%20Parentheses/ValidParentheses.cpp)
 
 
+----
+>*GitHub链接：*
+>*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
+
+>*知乎主页：*
+>*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
+>*简书主页*
+>*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
+>*欢迎大家来一起交流学习*

@@ -1,0 +1,46 @@
+---
+layout: post
+title:   VMWare虚拟机通过主机代理上网
+author: leacoder
+categories: 程序员练级之旅 
+tags: 程序员练级之旅 VMWare
+---
+
+
+* content
+{:toc}
+
+
+### 1.在宿主机windows上运行shadowsocks.exe并勾选“允许其他设备连接”
+![001.png](https://upload-images.jianshu.io/upload_images/16846478-2dd3a1666af2153f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 2.设置网络连接
+![002.png](https://upload-images.jianshu.io/upload_images/16846478-bed31b95b9c8aa08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 3.查询主机IP
+![003.png](https://upload-images.jianshu.io/upload_images/16846478-df60cb3e410bdbce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 4.进入虚拟机linux系统，设置网络
+System Settings – Network – Network proxy勾选Manual（手动）,地址全部填宿主机IP（局域网网段），设置好代理端口（可在windows下的shadowsocks查看，一般为默认1080）
+
+![004.png](https://upload-images.jianshu.io/upload_images/16846478-cdfcd98ce742f009.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 5.可能浏览器也需要设置（Firefox）
+
+![005.png](https://upload-images.jianshu.io/upload_images/16846478-5972e108321a3bb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![006.png](https://upload-images.jianshu.io/upload_images/16846478-a7a8dcb6d84d6344.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+----
+>*GitHub链接：*
+>*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
+
+>*知乎主页：*
+>*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
+>*简书主页*
+>*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
+>*欢迎大家来一起交流学习*

@@ -160,3 +160,14 @@ count被增加了两次。
 # 个人观点：
 作者罗列了面向对象编程的多个问题：香蕉 猴 丛林问题、钻石问题(菱形继承问题)、脆弱的基类问题、引用问题。并且可以使用基于接口的多态而非面向对象的多态。这是作者几十年面向对象编程的经验之谈，但是 说 再见，面向对象编程 肯定是夸大了，不过其问题与不足我们也该谨慎处理避免掉坑里。也许随着历史的发展会出现更好的更NB的不同理念的编程语言，即使那时我相信面向对象编程也会有一席之地。
 
+----
+>*GitHub链接：*
+>*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
+
+>*知乎主页：*
+>*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
+>*简书主页*
+>*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
+>*欢迎大家来一起交流学习*

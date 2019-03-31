@@ -95,4 +95,14 @@ Google领导的TensorFlow，Amazon选择的MXNet，Facebook倾力打造的PyTorc
 
 最后，我们会发现深度学习框架其实只是一个工具和平台，虽然分为四大阵营和四大技术路线，但是得益于这些主流框架之间的不停的比拼与互相借鉴，最后会发现其实大家都差不多，最棒的是这些主流的深度学习框架都是基于Python的，只要掌握了Python和深度学习算法的设计思想，每一种框架都是一个可用的库或工具集，我们是工程师，工程师需要善于学习并善于选择使用最优的工具。初学者可以从上层高级API框架开始学习，如Keras、Gluon和FastAI，但是不能依赖这些层层封装高级API，不然是无法真正掌握深度学习的技术本质的。深入学习并熟练掌握一种顶级深度学习框架是非常重要的，比如PyTorch，然后再跑一跑TensorFlow和MXNet，我们可以在对比中学习，在深度学习领域，可以深刻理解什么是“纸上得来终觉浅”，我觉得学习深度学习及人工智能技术，一定要动手实践，只有动手做过了才是自己的，不然，一切都还是书本上的。
 
+----
+>*GitHub链接：*
+>*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
 
+>*知乎主页：*
+>*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
+>*简书主页*
+>*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
+>*欢迎大家来一起交流学习*

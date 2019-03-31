@@ -10,7 +10,7 @@ tags:
 * content
 {:toc}
 
-
+![LeetCode.jpg](https://upload-images.jianshu.io/upload_images/16846478-1484f807618fc51f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 环形链表
 [环形链表(Linked List Cycle)](https://leetcode-cn.com/problems/linked-list-cycle/)
@@ -104,3 +104,15 @@ Java实现逻辑上与Python3无区别
 [Java 集合框架](http://www.runoob.com/java/java-collections.html)
 [Java HashSet api doc from oracle ](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html)
 [HashSet 的实现原理](http://wiki.jikexueyuan.com/project/java-collection/hashset.html)
+
+----
+>*GitHub链接：*
+>*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
+
+>*知乎主页：*
+>*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
+>*简书主页*
+>*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
+>*欢迎大家来一起交流学习*

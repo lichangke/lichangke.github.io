@@ -11,6 +11,8 @@ tags:
 {:toc}
 
 
+![LeetCode.jpg](https://upload-images.jianshu.io/upload_images/16846478-99e6ef96e7d6f9cb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 # 两两交换其中相邻的节点
 [LeetCode 24. 两两交换链表中的节点(Swap Nodes in Pairs)](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
@@ -114,3 +116,16 @@ class Solution:
         return self.next
 ```
 实现逻辑 与 C++、Java 无差别，但是采用了多元赋值
+
+
+----
+>*GitHub链接：*
+>*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
+
+>*知乎主页：*
+>*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
+>*简书主页*
+>*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
+>*欢迎大家来一起交流学习*
