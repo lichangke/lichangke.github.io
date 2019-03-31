@@ -84,8 +84,9 @@ Python版本： Python3
 
 退出 按 Q
 
+
 ### alien.py
-```Python
+``` python
 import pygame
 from pygame.sprite import Sprite
 
@@ -127,7 +128,7 @@ class Alien(Sprite):
             return True
 ```
 ### alien_invasion.py
-```Python
+``` python
 # 导入了模块sys 和pygame
 import sys
 
@@ -217,7 +218,7 @@ run_game()
 
 ```
 ### bullet.py
-```Python
+``` python
 import pygame
 from pygame.sprite import Sprite
 
@@ -257,7 +258,7 @@ class Bullet(Sprite):
         pygame.draw.rect(self.screen, self.color, self.rect)
 ```
 ### button.py
-```Python
+``` python
 # 导入了模块pygame.font ， 它让Pygame能够将文本渲染到屏幕上
 import pygame.font
 
@@ -299,7 +300,7 @@ class Button():
 
 ### game_stats.py
 
-```Python
+``` python
 #在这个游戏运行期间， 我们只创建一个GameStats 实例， 但每当玩家开始新游戏时， 需要重置一些统计信息。
 #我们在方法reset_stats() 中初始化大部分统计信息，而不是在__init__() 中直接初始化它们。 
 class GameStats():
@@ -324,7 +325,7 @@ class GameStats():
 ```
 
 ### scoreboard.py
-```Python
+``` python
 import pygame.font
 from ship import Ship
 from pygame.sprite import Group
@@ -403,7 +404,7 @@ class Scoreboard():
 ```
 
 ### settings.py
-```Python
+``` python
 class Settings():
     """存储《外星人入侵》 的所有设置的类"""
 
@@ -458,7 +459,7 @@ class Settings():
 ```
 
 ### ship.py
-```Python
+``` python
 import pygame
 from pygame.sprite import Sprite
 

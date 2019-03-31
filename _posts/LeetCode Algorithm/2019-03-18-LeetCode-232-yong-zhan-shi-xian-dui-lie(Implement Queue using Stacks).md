@@ -44,7 +44,7 @@ queue.empty(); // 返回 false
 ### 1、出入双栈 Py3
 
 [用栈实现队列(Implement Queue using Stacks) Py3 出入双栈实现](https://github.com/lichangke/LeetCode/blob/master/232.%20Implement%20Queue%20using%20Stacks/ImplementQueueusingStacks.py)
-```Python
+``` python
 #@author:leacoder
 #@des: 用栈实现队列
 class MyQueue:

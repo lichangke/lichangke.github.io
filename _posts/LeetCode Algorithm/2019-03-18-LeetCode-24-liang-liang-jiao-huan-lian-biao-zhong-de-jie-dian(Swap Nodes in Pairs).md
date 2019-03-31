@@ -23,7 +23,7 @@ tags:
 ## C++实现
 ### 1、迭代实现 C++
 [两两交换其中相邻的节点(Swap Nodes in Pairs) C++ 迭代实现](https://github.com/CK-Li/LeetCode/blob/master/24.%20Swap%20Nodes%20in%20Pairs/SwapNodesinPairs_2.cpp)
-```C++
+``` c++
  * @author:leacoder
  * @des: 迭代实现 两两交换链表中的节点
  */
@@ -53,7 +53,7 @@ public:
 ```
 ### 2、递归实现 C++
 [两两交换其中相邻的节点(Swap Nodes in Pairs) C++ 递归实现](https://github.com/CK-Li/LeetCode/blob/master/24.%20Swap%20Nodes%20in%20Pairs/SwapNodesinPairs.cpp)
-```C++
+``` c++
 /**
  * @author:leacoder
  * @des: 递归实现 两两交换链表中的节点
@@ -101,7 +101,7 @@ Java实现逻辑上与C++无区别
 )
 ## Python3 实现
 [两两交换其中相邻的节点(Swap Nodes in Pairs) Py3 迭代实现](https://github.com/CK-Li/LeetCode/blob/master/24.%20Swap%20Nodes%20in%20Pairs/SwapNodesinPairs.py)
-```Python
+``` python
 #@author:leacoder
 #@des: 循环实现  多元赋值
 
