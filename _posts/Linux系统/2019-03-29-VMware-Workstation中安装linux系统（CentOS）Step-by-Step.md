@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 	VMware-Workstation中安装linux系统（CentOS）Step-by-Step
+title: 	VMWare-Workstation中安装linux系统（CentOS）Step-by-Step
 author: leacoder
 categories: Linux 
 tags: Linux
