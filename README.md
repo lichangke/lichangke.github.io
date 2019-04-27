@@ -2,7 +2,7 @@
 本地执行
 jekyll s
 
-localhost:4000
+localhost:4001
 
 Demo 标签内容修改
 \lichangke.github.io\js\waterfall.js
