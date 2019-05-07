@@ -478,7 +478,7 @@ HTML教程：可参考runoob  [HTML 教程- (HTML5 标准)](https://www.runoob.c
 
 创建网站时， 几乎都有一些所有网页都将包含的元素。 在这种情况下， 可编写一个包含通用元素的父模板， 并让每个网页都继承这个模板， 而不必在每个网页中重复定义这些通用元素。 
 
-**1. 父模板**
+**1.父模板**
 
 首先来创建一个名为base.html的模板， 并将其存储在index.html所在的目录中。 这个文件包含所有页面都有的元素； 其他的模板都继承base.html。 当前， 所有页面都包含的元素只有顶端的标题。 将在每个页面中包含这个模板， 因此将这个标题设置为到主页的链接：
 
@@ -490,13 +490,13 @@ HTML教程：可参考runoob  [HTML 教程- (HTML5 标准)](https://www.runoob.c
 </p>
 {% block content %}{% endblock content %} 
 ```
-注意： {% 之间没有空格
+注意： "{%"之间没有空格
 
 Django 模板可阅读 runoob [Django 模板](https://www.runoob.com/django/django-template.html)
 
 或者 Django 官网文档 [The Django template language](https://docs.djangoproject.com/en/2.2/ref/templates/language/#templates)
 
-**2. 子模板**
+**2.子模板**
 
 重新编写index.html， 使其继承base.html， 如下所示：
 

@@ -58,7 +58,7 @@ excerpt_separator: "\n\n\n\n"
 
 # paginate
 # plugins: [jekyll-paginate]
-paginate: 6
+
 
 plugins:
   - jekyll-paginate
@@ -68,4 +68,10 @@ plugins:
   - jemoji
   - jekyll-include-cache
   
+paginate: 6
+  
+strict_front_matter: true
+liquid:
+  error_mode: strict
+ 
 port: 4001
