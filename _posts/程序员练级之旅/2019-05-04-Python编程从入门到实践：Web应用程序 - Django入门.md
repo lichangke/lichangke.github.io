@@ -22,6 +22,11 @@ Python版本： Python3
 ## GitHub: 
 [https://github.com/lichangke/Python3_Project/tree/master/learning_log](https://github.com/lichangke/Python3_Project/tree/master/learning_log)
 
+
+![1 attention.png](https://github.com/lichangke/lichangke.github.io/blob/master/img/2019-05-04-Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%9AWeb%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%20-%20Django%E5%85%A5%E9%97%A8.PNG?raw=true)
+
+
+
 ## 1. Django入门
 Django（http://djangoproject.com/ ）
 

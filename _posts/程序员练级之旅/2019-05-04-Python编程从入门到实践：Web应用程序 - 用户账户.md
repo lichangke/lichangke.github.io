@@ -26,6 +26,7 @@ Python版本： Python3
 ## Web应用程序 - Django入门
 [https://www.jianshu.com/p/b3267d16c245](https://www.jianshu.com/p/b3267d16c245)
 
+![1 attention.png](https://github.com/lichangke/lichangke.github.io/blob/master/img/2019-05-04-Python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%9AWeb%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%20-%20Django%E5%85%A5%E9%97%A8.PNG?raw=true)
 
 ## 2. 用户账户
 Web应用程序的核心是让任何用户都能够注册账户并能够使用它。将创建一些表单， 让用户能够添加主题和条目， 以及编辑既有的条目。 
