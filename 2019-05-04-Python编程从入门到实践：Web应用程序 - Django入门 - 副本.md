@@ -24,7 +24,6 @@ Python版本： Python3
 
 
 
-
 ## 1. Django入门
 Django（http://djangoproject.com/ ）
 
@@ -487,11 +486,11 @@ HTML教程：可参考runoob  [HTML 教程- (HTML5 标准)](https://www.runoob.c
 
 ```html
 <p>
-    <a href="\{\%url 'learning_logs:index' \%\}">Learning Log</a>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a>
 </p>
-\{\%block content \%\}\{\% endblock content \%\} 
+{% block content %}{% endblock content %} 
 ```
-注意： "\{\%"之间没有空格
+注意： "{%"之间没有空格
 
 Django 模板可阅读 runoob [Django 模板](https://www.runoob.com/django/django-template.html)
 
@@ -504,11 +503,11 @@ Django 模板可阅读 runoob [Django 模板](https://www.runoob.com/django/djan
 **learning_logs/index.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
+{% extends "learning_logs/base.html" %}
 
-\{\% block content \%\}
+{% block content %}
 <p>Learning Log helps you keep track of your learning, for any topic you're learning about.</p>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 #### 1.4.2 显示所有主题的页面
 
@@ -562,17 +561,17 @@ def topics(request):
 **topics.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
+{% extends "learning_logs/base.html" %}
+{% block content %}
 <p>Topics</p>
 <ul>
-    \{\% for topic in topics \%\}
+    {% for topic in topics %}
     <li>{{ topic }}</li>
-    \{\% empty \%\}
+    {% empty %}
     <li>No topics have been added yet.</li>
-    \{\% endfor \%\}
+    {% endfor %}
 </ul>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 现在需要修改父模板， 使其包含到显示所有主题的页面的链接：
 
@@ -580,11 +579,11 @@ def topics(request):
 
 ```html
 <p>
-    <a href="\{\% url 'learning_logs:index' \%\}">Learning Log</a> - 
-    <a href="\{\% url 'learning_logs:topics' \%\}">Topics</a>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> - 
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
 </p>
 
-\{\% block content \%\}\{\% endblock content \%\}
+{% block content %}{% endblock content %}
 ```
 
 刷新浏览器中的主页， 将看到链接Topics。 单击这个链接， 将看到如下图
@@ -641,23 +640,23 @@ def topic(request, topic_id):
 
 **topic.html**
 ```html
-\{\% extends 'learning_logs/base.html' \%\}
-\{\% block content \%\}
+{% extends 'learning_logs/base.html' %}
+{% block content %}
 <p>Topic: {{ topic }}</p>
 <p>Entries:</p>
 <ul>
-    \{\% for entry in entries \%\}
+    {% for entry in entries %}
     <li>
         <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
         <p>{{ entry.text|linebreaks }}</p>
     </li>
-    \{\% empty \%\}
+    {% empty %}
     <li>
         There are no entries for this topic yet.
     </li>
-    \{\% endfor \%\}
+    {% endfor %}
 </ul>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 **4. 将显示所有主题的页面中的每个主题都设置为链接**
 
@@ -665,19 +664,19 @@ def topic(request, topic_id):
 
 **topics.html**
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
+{% extends "learning_logs/base.html" %}
+{% block content %}
 <p>Topics</p>
 <ul>
-    \{\% for topic in topics \%\}
+    {% for topic in topics %}
     <li>
-        <a href="\{\% url 'learning_logs:topic' topic.id \%\}">{{ topic }}</a>
+        <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
     </li>
-    \{\% empty \%\}
+    {% empty %}
     <li>No topics have been added yet.</li>
-    \{\% endfor \%\}
+    {% endfor %}
 </ul>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 用模板标签url 根据learning_logs中名为topic 的URL模式来生成合适的链接。 这个URL模式要求提供实参topic_id 
 

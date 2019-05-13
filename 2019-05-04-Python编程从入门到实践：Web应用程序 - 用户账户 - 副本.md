@@ -26,9 +26,6 @@ Python版本： Python3
 ## Web应用程序 - Django入门
 [https://www.jianshu.com/p/b3267d16c245](https://www.jianshu.com/p/b3267d16c245)
 
-注：所有涉及 "{%" 在本文均为  "\{\%" , "%}" 在本文均为 "\%\}"，不然jekyll有问题
-
-
 ## 2. 用户账户
 Web应用程序的核心是让任何用户都能够注册账户并能够使用它。将创建一些表单， 让用户能够添加主题和条目， 以及编辑既有的条目。 
 
@@ -132,17 +129,17 @@ def new_topic(request):
 **new_topic.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
+{% extends "learning_logs/base.html" %}
+{% block content %}
 <p>Add a new topic:</p>
 <!--定义了一个HTML表单-->
 <!--实参action 告诉服务器将提交的表单数据发送到哪里， 这里我们将它发回给视图函数new_topic() 。 实参method 让浏览器以POST请求的方式提交数据。-->
-<form action="\{\% url 'learning_logs:new_topic' \%\}" method='post'>
-    \{\% csrf_token \%\} <!--防止攻击者利用表单来获得对服务器未经授权的访问-->
+<form action="{% url 'learning_logs:new_topic' %}" method='post'>
+    {% csrf_token %} <!--防止攻击者利用表单来获得对服务器未经授权的访问-->
     {{ form.as_p }} <!--显示表单修饰符as_p 让Django以段落格式渲染所有表单元素， 这是一种整洁地显示表单的简单方式-->
     <button name="submit">add topic</button> <!--Django不会为表单创建提交按钮， 因此定义了一个这样的按钮-->
 </form>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 **5. 链接到页面new_topic**
 
@@ -151,20 +148,20 @@ def new_topic(request):
 **topics.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
+{% extends "learning_logs/base.html" %}
+{% block content %}
 <p>Topics</p>
 <ul>
-    \{\% for topic in topics \%\}
+    {% for topic in topics %}
     <li>
-        <a href="\{\% url 'learning_logs:topic' topic.id \%\}">{{ topic }}</a>
+        <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
     </li>
-    \{\% empty \%\}
+    {% empty %}
     <li>No topics have been added yet.</li>
-    \{\% endfor \%\}
+    {% endfor %}
 </ul>
-<a href="\{\% url 'learning_logs:new_topic' \%\}">Add a new topic:</a>
-\{\% endblock content \%\}
+<a href="{% url 'learning_logs:new_topic' %}">Add a new topic:</a>
+{% endblock content %}
 ```
 链接放在了既有主题列表的后面。 下图显示了生成的表单。 
 
@@ -247,16 +244,16 @@ def new_entry(request, topic_id):
 **new_entry.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
-<p><a href="\{\% url 'learning_logs:topic' topic.id \%\}">{{ topic }}</a></p>
+{% extends "learning_logs/base.html" %}
+{% block content %}
+<p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
 <p>Add a new entry:</p>
-<form action="\{\% url 'learning_logs:new_entry' topic.id \%\}" method='post'>
-    \{\% csrf_token \%\}
+<form action="{% url 'learning_logs:new_entry' topic.id %}" method='post'>
+    {% csrf_token %}
     {{ form.as_p }}
     <button name='submit'>add entry</button>
 </form>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 **5. 链接到页面new_entry**
 
@@ -264,17 +261,17 @@ def new_entry(request, topic_id):
 
 **topic.html**
 ```html
-\{\% extends 'learning_logs/base.html' \%\}
-\{\% block content \%\}
+{% extends 'learning_logs/base.html' %}
+{% block content %}
 <p>Topic: {{ topic }}</p>
 <p>Entries:</p>
 <p>
-    <a href="\{\% url 'learning_logs:new_entry' topic.id \%\}">add new entry</a>
+    <a href="{% url 'learning_logs:new_entry' topic.id %}">add new entry</a>
 </p>
 <ul>
 --snip—
 </ul>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 下图显示了页面new_entry
 
@@ -351,16 +348,16 @@ def edit_entry(request, entry_id):
 **edit_entry.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
-<p><a href="\{\% url 'learning_logs:topic' topic.id \%\}">{{ topic }}</a></p>
+{% extends "learning_logs/base.html" %}
+{% block content %}
+<p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
 <p>Edit entry:</p>
-<form action="\{\% url 'learning_logs:edit_entry' entry.id \%\}" method='post'> <!--实参action 将表单发回给函数edit_entry() 进行处理-->
-    \{\% csrf_token \%\}
+<form action="{% url 'learning_logs:edit_entry' entry.id %}" method='post'> <!--实参action 将表单发回给函数edit_entry() 进行处理-->
+    {% csrf_token %}
     {{ form.as_p }}
     <button name="submit">save changes</button>
 </form>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 
 **4. 链接到页面edit_entry**
@@ -371,12 +368,12 @@ def edit_entry(request, entry_id):
 
 ```html
 --snip--
-\{\% for entry in entries \%\}
+{% for entry in entries %}
     <li>
         <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
         <p>{{ entry.text|linebreaks }}</p>
         <p>
-            <a href="\{\% url 'learning_logs:edit_entry' entry.id \%\}">edit entry</a>
+            <a href="{% url 'learning_logs:edit_entry' entry.id %}">edit entry</a>
         </p>
     </li>
 --snip--
@@ -473,23 +470,23 @@ urlpatterns = [
 **login.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
+{% extends "learning_logs/base.html" %}
 
-\{\% block content \%\}
+{% block content %}
 
-\{\% if form.errors \%\}
+{% if form.errors %}
 <p>Your username and password didn't match. Please try again.</p>
-\{\% endif \%\}
+{% endif %}
 
-<form method="post" action="\{\% url 'users:login' \%\}">
-    \{\% csrf_token \%\}
+<form method="post" action="{% url 'users:login' %}">
+    {% csrf_token %}
     {{ form.as_p }}
     <button name="submit">log in</button>
-    <input type="hidden" name="next" value="\{\% url 'learning_logs:index' \%\}" />
+    <input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
     <!--包含了一个隐藏的表单元素——'next' ， 其中的实参value 告诉Django在用户成功登录后将其重定向到什么地方——在这里是主页。-->
 </form>
 
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 **2. 链接到登录页面**
 
@@ -499,17 +496,17 @@ urlpatterns = [
 
 ```html
 <p>
-    <a href="\{\% url 'learning_logs:index' \%\}">Learning Log</a> -
-    <a href="\{\% url 'learning_logs:topics' \%\}">Topics</a>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
     <!--在Django身份验证系统中， 每个模板都可使用变量user ， 这个变量有一个is_authenticated 属性： 如果用户已登录， 该属性将为True ， 否则为False 。-->
-    \{\% if user.is_authenticated \%\}
+    {% if user.is_authenticated %}
     Hello, {{ user.username }}.
-    \{\% else \%\}
-    <a href="\{\% url 'users:login' \%\}">log in</a>
-    \{\% endif \%\}
+    {% else %}
+    <a href="{% url 'users:login' %}">log in</a>
+    {% endif %}
 </p>
 
-\{\% block content \%\}\{\% endblock content \%\}
+{% block content %}{% endblock content %}
 ```
 
 **3. 使用登录页面**
@@ -569,12 +566,12 @@ def logout_view(request):
 
 ```html
 --snip--
-    \{\% if user.is_authenticated \%\}
+    {% if user.is_authenticated %}
     Hello, {{ user.username }}.
-    <a href="\{\% url 'users:logout' \%\}">log out</a>
-    \{\% else \%\}
-    <a href="\{\% url 'users:login' \%\}">log in</a>
-    \{\% endif \%\}
+    <a href="{% url 'users:logout' %}">log out</a>
+    {% else %}
+    <a href="{% url 'users:login' %}">log in</a>
+    {% endif %}
 --snip--
 ```
 下图显示了用户登录后看到的主页
@@ -645,15 +642,15 @@ def register(request):
 **register.html**
 
 ```html
-\{\% extends "learning_logs/base.html" \%\}
-\{\% block content \%\}
-<form method="post" action="\{\% url 'users:register' \%\}">
-    \{\% csrf_token \%\}
+{% extends "learning_logs/base.html" %}
+{% block content %}
+<form method="post" action="{% url 'users:register' %}">
+    {% csrf_token %}
     {{ form.as_p }}
     <button name="submit">register</button>
-    <input type="hidden" name="next" value="\{\% url 'learning_logs:index' \%\}" />
+    <input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
 </form>
-\{\% endblock content \%\}
+{% endblock content %}
 ```
 使用了方法as_p ， 让Django在表单中正确地显示所有的字段， 包括错误消息——如果用户没有正确地填写表单。
 
@@ -665,13 +662,13 @@ def register(request):
 
 ```html
 --snip--
-    \{\% if user.is_authenticated \%\}
+    {% if user.is_authenticated %}
     Hello, {{ user.username }}.
-    <a href="\{\% url 'users:logout' \%\}">log out</a>
-    \{\% else \%\}
-    <a href="\{\% url 'users:register' \%\}">register</a> -
-    <a href="\{\% url 'users:login' \%\}">log in</a>
-    \{\% endif \%\}
+    <a href="{% url 'users:logout' %}">log out</a>
+    {% else %}
+    <a href="{% url 'users:register' %}">register</a> -
+    <a href="{% url 'users:login' %}">log in</a>
+    {% endif %}
 --snip--
 ```
 如下图所示
