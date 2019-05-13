@@ -73,5 +73,6 @@ paginate: 6
 strict_front_matter: true
 liquid:
   error_mode: strict
- 
+
+
 port: 4001
