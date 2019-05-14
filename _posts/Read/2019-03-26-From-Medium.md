@@ -12,6 +12,9 @@ tags: Medium
 [Medium – a place to read and write big ideas and important stories](https://medium.com/)
 
 ## From Medium:
+- [The SQL vs NoSQL Difference: MySQL vs MongoDB](https://medium.com/xplenty-blog/the-sql-vs-nosql-difference-mysql-vs-mongodb-32c9980e67b2)
+
+*介绍了什么是SQL什么是NoSQL，从可扩展性和结构两方面比较了SQL和NoSQL。并具体介绍比较了SQL代表MySQL 的好处和优势 以及 NOSQL代表MongoDB的好处和优势。就哪个数据库适合您的业务给出了建议*
 - [An A-Z of useful Python tricks](https://medium.freecodecamp.org/an-a-z-of-useful-python-tricks-b467524ee747)
 
 *这篇文章对python使用者有很大的启迪和帮助，作者在文中介绍了26类（按字母A到Z排列）实用的Python技巧，推荐收藏并根据作者在文中扩展的进一步了解。*

@@ -9,6 +9,33 @@ tags: Blog
 * content
 {:toc}
 
+
+- [Flask vs. Django: Why Flask Might Be Better](https://www.codementor.io/garethdwyer/flask-vs-django-why-flask-might-be-better-4xs7mdf8v)
+
+Flask和Django是Python最流行的两个Web框架，在这篇文章中，作者讨论在Flask和Django之间进行选择时应该考虑的一些要点。作者长期使用Flask并是Flask by Example这本书的作者，所以作者个人可能对Flask有点偏见。
+**为什么我需要一个Web框架，以及那是什么。**
+Web框架旨在实现大多数Web应用程序常用的所有功能，例如将URL映射到Python代码块。
+确切地说，框架中实现的内容以及应用程序开发人员编写的内容因框架而异。
+*Flask和Django之间的最大区别是：*
+Flask实现了最低限度的功能，并为附加组件或开发人员留下接口
+Django遵循“batteries included”的理念，为您提供更多开箱即用的功能。
+**快速比较**
+*主要对比：*
+Flask提供简单，灵活和细粒度的控制。它可以让你决定如何实现它。
+Django提供全面的体验：您可以获得开箱即用的应用程序和项目的管理面板，数据库界面，ORM和目录结构。
+*你应该选择：*
+Flask，如果您专注于体验和学习机会，或者您想要更多地控制使用哪些组件（例如您想要使用哪些数据库以及如何与它们进行交互）。
+Django，如果你专注于最终产品。特别是如果你正在开发一个直接的应用程序，如新闻网站，电子商店或博客，你希望总是有一种明显的做事方式。
+更多信息：
+Django已经存在了很长时间 - 它于2005年首次发布，而Flask于2010年首次亮相
+**Hello, World!**
+作者分别就使用Flask和Django来实现一个“Hello World”应用程序，按步骤进行了具体说明。可以从中体会Flask和Django的差别。
+**最后的评论**
+在这篇文章中，作者介绍了Flask和Django，然后对两者进行了简短的比较，接着展示了如何使用每个框架构建一个“Hello World”应用程序。
+Django是一个比Flask更重的框架 - 如果你正在学习Web编程，那么要弄清楚哪些部分负责什么功能，以及你需要改变什么来获得你想要的结果可能更难。但是，一旦你习惯了Django，它所做的额外工作可能非常有用，可以节省你设置Web应用程序重复，枯燥的组件的时间。
+有时很难在两个框架之间进行选择 - 好的是，即使你进入更高级的功能，例如模板，这两个在许多方面仍然非常相似。 因此，如果您需要或想要，可以轻松地从一个切换到另一个。
+
+
 - [Why learning more isn’t always better](https://www.jotform.com/blog/the-learning-myth/)
 
 为什么学习更多并不总是更好？
