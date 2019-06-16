@@ -1,3 +1,15 @@
+---
+layout: post
+title:  LeetCode-200--岛屿数量(Number-of-Islands)
+author: leacoder
+categories: Algorithm 
+tags: Algorithm Leetcode
+---
+
+* content
+{:toc}
+
+
 ![LeetCode.jpg](https://upload-images.jianshu.io/upload_images/16846478-6b16316b977946f3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### [200\. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
@@ -172,10 +184,15 @@ class Solution:
 ----
 >*GitHub链接：*
 >*[https://github.com/lichangke/LeetCode](https://github.com/lichangke/LeetCode)*
+
 >*知乎个人首页：*
 >*[https://www.zhihu.com/people/lichangke/](https://www.zhihu.com/people/lichangke/)*
+
 >*简书个人首页：*
 >*[https://www.jianshu.com/u/3e95c7555dc7](https://www.jianshu.com/u/3e95c7555dc7)*
+
 >*个人Blog:*
 >*[https://lichangke.github.io/](https://lichangke.github.io/)*
+
 >*欢迎大家来一起交流学习*
+
